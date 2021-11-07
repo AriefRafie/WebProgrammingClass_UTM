@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 2: HTML Form</title>
+    <!--
+     Name: Muhammad Arief Bin Mohd Rafie
+     Matric No: SX210497ECJHS04
+     Lab 2: HTML Form
+    -->
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        h1 {
+            color: blue;
+            font-family: verdana;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Medical Form</h1>
+    <form action="/process.php" target="_blank">
+        <!--fieldset Personal Information-->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <table style="width: 70%">
+                <tr>
+                    <!--first name-->
+                    <td>
+                        <label for="fname">First Name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="fname" name="fname" />
+                    </td>
+                    <!--gender-->
+                    <td>
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="female" name="female" />
+                        <label for="genderFemale">Female</label>
+                        <input type="radio" id="male" name="male" />
+                        <label for="genderMale">Male</label>
+                    </td>
+                </tr>
+                <tr>
+                    <!--last name-->
+                    <td>
+                        <label for="lname">Last name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="lname" name="lname" />
+                    </td>
+                    <!--Nationality-->
+                    <td>
+                        <label for="nationality">Nationality</label>
+                    </td>
+                    <td>
+                        <select id="nationality" name="nationality">
+                <option value="Malaysia">Malaysia</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Others">Others</option>
+              </select>
+                    </td>
+                </tr>
+                <tr>
+                    <!--Address-->
+                    <td>
+                        <label for="address">Address</label>
+                    </td>
+                    <td colspan="3">
+                        <textarea id="address" name="address" rows="4" cols="60">
+              </textarea>
+                    </td>
+                </tr>
+            </table>
+            <br />
+        </fieldset>
+        <br/>
+        <!--fieldset Medical History-->
+        <fieldset>
+            <legend>Medical History</legend>
+            <input type="checkbox" id="Smallpox" name="Smallpox" value="Smallpox">
+            <label for="Smallpox"> Smallpox</label>
+            <input type="checkbox" id="Mumps" name="Mumps" value="Mumps">
+            <label for="Mumps"> Mumps</label>
+            <input type="checkbox" id="Dizziness" name="Dizziness" value="Dizziness">
+            <label for="Dizziness"> Dizziness</label>
+            <input type="checkbox" id="Sneezing" name="Sneezing" value="Sneezing">
+            <label for="Sneezing"> Sneezing</label>
+        </fieldset>
+        <br/>
+        <!--fieldset Current Medication-->
+        <fieldset>
+            <legend>Current Medication</legend>
+            <br/>
+            <!--Question for currently taking madecation-->
+            <label for="currentMedication">Are you currently taking any medication?</label>
+            <input type="radio" id="yes" name="yes" />
+            <label for="yesCM"> Yes</label>
+            <input type="radio" id="no" name="no" />
+            <label for="noCM"> No</label>
+            <br/>
+            <!--If Yes please state-->
+            <p>If you are currently taking medication, please indicate in the space below:</p>
+            <textarea name="message" rows="4" cols="60"></textarea>
+        </fieldset>
+        <br />
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+    </form>
+</body>
+
+</html>
