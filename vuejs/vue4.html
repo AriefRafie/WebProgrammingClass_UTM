@@ -1,0 +1,33 @@
+<!--Vue.js Loop Binding
+Using the v-for directive to bind an array of Vue objects
+to an "array" of HTML element:-->
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+<body>
+
+    <h2>Vue.js</h2>
+
+    <div id="app">
+        <ul>
+            <li v-for="x in todos">
+                {{ x.text }}
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        myObject = new Vue({
+            el: '#app',
+            data: {
+                todos: [{
+                    text: 'Learn JavaScript'
+                }, {
+                    text: 'Learn Vue.js'
+                }, {
+                    text: 'Build Something Awesome'
+                }]
+            }
+        })
+    </script>
