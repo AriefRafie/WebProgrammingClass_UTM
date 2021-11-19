@@ -1,0 +1,37 @@
+body {
+    background-color: rgba(221, 117, 255, 0.481);
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(252, 0, 0);
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: rgb(33, 255, 4);
+    text-decoration: underline;
+    font-style: oblique;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: rgb(128, 0, 45);
+}
+
+a:hover {
+    color: rgb(240, 132, 31);
+}
+
+a:active {
+    color: rgb(83, 83, 255);
+}
+
+p {
+    color: #007bff;
+    font-variant: small-caps;
+}
