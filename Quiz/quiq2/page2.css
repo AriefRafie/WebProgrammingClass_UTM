@@ -1,0 +1,30 @@
+/**
+     Name: Muhammad Arief Bin Mohd Rafie
+     Matric No: SX210497ECJHS04
+     Quiz 2: page2.css
+     Date: 9 Jan 2022
+**/
+body{
+    text-align: center;
+}
+div{
+    background-image: url('../quiq2/files/paper.jpg');
+    border: 3px;
+    border-color: darkred;
+    height: 500px;
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+.avatar_container{
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.avatar {
+    vertical-align: middle;
+    border-radius: 50%;
+  }
