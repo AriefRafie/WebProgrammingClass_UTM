@@ -1,0 +1,21 @@
+/**
+     Name: Muhammad Arief Bin Mohd Rafie
+     Matric No: SX210497ECJHS04
+     Lab 4: CSS 1 
+     Date: 10 Jan 2022
+**/
+
+ /**Activity 1*/
+ body{
+     background-color: lightgrey;
+ }
+ h1{
+     text-align: center;
+     font-family: Georgia;
+     color: rgb(0, 0, 0);
+ }
+ p{
+     text-align: center;
+     font-family: Arial;
+     color: green;
+ }
