@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> Lesson 2g-6: Simple JavaScript Code </title>
+
+
+<script type="text/javascript"> 
+
+function confirmation() 
+{//open function 
+var answer = confirm("Leave this page?") 
+    if (answer) 
+		{ 
+			alert("Bye bye!") 
+			window.location = "http://www.google.com/"; /* this bring to google */
+		} 
+	else
+		{  
+			alert("Thanks for sticking around!") 
+		} 
+} //close function
+</script> 
+</head> 
+
+<body> 
+<form> 
+<input type="button" onClick="confirmation()" value="TRY Leave This Page"> 
+</form> 
+</body>

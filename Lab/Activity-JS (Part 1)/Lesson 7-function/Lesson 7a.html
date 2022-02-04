@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lesson 7a: Function</title>
+
+<script type="text/javascript">
+//<Script Language="JavaScript">
+
+function calculateTheDiscount()
+{
+  var itemPrice = 120.55;
+  var discountRate = 0.20; // discount rate 20%
+  var discountAmount = itemPrice * discountRate;
+  var netPrice = itemPrice - discountAmount;
+  var sentence1 = "Item Price: $" + itemPrice + "<br>";
+  var sentence2 = "Discount: $" + discountAmount + "<br>";
+  var sentence3 = "Net Price: $" + netPrice + "<br>";
+
+  document.write(sentence1);
+  document.write(sentence2);
+  document.write(sentence3);
+}
+</Script>
+</head>
+
+<body>
+<!-- ========= call function using javascript ===================== -->
+
+<Script Language="JavaScript">
+	
+	calculateTheDiscount(); //call function
+
+</Script>
+</body>
+</html>

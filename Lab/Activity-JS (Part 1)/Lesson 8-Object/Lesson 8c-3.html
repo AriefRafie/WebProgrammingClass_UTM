@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Lesson 8c-3: Others Array Method</title>
+
+<script type="text/javascript">
+
+var myCars=new Array(); //step1: create object with contructor new operator
+// create a new array with no elements
+// new Array(n); will create a new array of length n
+myCars[0]="Saab";
+myCars[1]="Volvo";
+myCars[2]="BMW";
+//myCars[0]="Opel"; // step 3: overwrite the current value of myCars[0]
+
+document.write(myCars[0]+"<br />"); //step2: Access an Array
+/*You can refer to a particular element in an array by referring 
+to the name of the array and the index number. The index number starts at 0.*/
+
+document.write("<br>"); //step 4: sorting array
+document.write("Before Sort:"+ myCars + "<br />");
+document.write("<br>");
+//print all element in an array
+
+document.write("After Sort:"+ myCars.sort() + "<br />");
+document.write("<br>");
+//using sort() method to sorting an array alphabetically and ascending
+
+
+
+
+</script>
+</head>
+<body>
+</body>
+</html>

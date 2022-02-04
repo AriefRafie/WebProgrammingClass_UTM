@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>User-defined objects</title>
+
+<script type="text/javascript">
+/* ==============================================================================================
+This example demonstrates how to create an object with a User-Defined Function. Here 'this' keyword is used to refer to the object that has been passed to a function. In the following example, you can create a template of an object (from an existing classes).
+============================================================================================*/
+
+// Define a function which will work as a method
+function addPrice(amount){
+    this.price = amount; 
+}
+
+//create an object with a User-Defined Function
+function book(title, author)
+{
+    this.title = title; 
+    this.author  = author;
+	this.addPrice = addPrice; // Assign that method as property.
+}
+</script>
+</head>
+
+
+<body>
+<script type="text/javascript">
+   var myBook = new book("Perl", "Mohtashim"); //istihar object iaitu buku dan diassignkan kepada pembolehubah 'myBook'
+   myBook.addPrice(100); //so, now you can write like this to access the function addPrice
+   document.write("Book title is : " + myBook.title + "<br>");
+   document.write("Book author is : " + myBook.author + "<br>");
+   document.write("Book price is : " + myBook.price + "<br>");
+   
+   
+   
+   /* ============================= 1- Now is your turn to do =============================================
+		After you have the template, you can create new instances of the object. Now you need to create new instances of the book's object and assign it to variable myBook2. The rest properties as below:
+			(a) Book title is : "PHP"
+			(b) Book author is : "Stephen"
+			(c) Print the Book title & Author
+	*/
+    
+	
+   
+   /* ============================= 2 - Again, your turn to do =============================================
+		create a new instances of the book's object, with null value and assign it to variable myBook3. Then the rest     	properties will be assign as below:
+			(a) Book title is : OpenGL"
+			(b) Book author is : "A.Saleem"
+			(c) Print the Book title & Author
+	*/
+   
+   
+	
+	/* ============================= 3- Last, your job to do =============================================
+		Assign the price and display the price for :
+			(a) PHP book, price is 150
+			(b) OpenGL book, price is 250
+	 */
+	
+   
+</script>
+</body>
+</html>

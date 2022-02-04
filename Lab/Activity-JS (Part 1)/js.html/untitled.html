@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<Script Language="JavaScript">
+<!--
+function OpenWindow(FileToOpen,winName,x,y){
+	if ((navigator.appName == "Netscape")){		
+		if (navigator.appVersion.charAt(0) == "3"){
+			x = Number(x) + 10;
+			y = Number(y) + 38;
+		}
+		else{
+			x = Number(x) + 0;
+			y = Number(y) + 20	;	
+		}
+	}
+	//else
+		var str = "WIDTH=" + x + ",HEIGHT=" + y +"'";
+		window.open(theURL,winName,str);	
+}
+//-->
+</script>
+<TITLE>HTML Tutorial - FunctionX</TITLE>
+
+</HEAD>
+<BODY>
+Main Opening File
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+OpenWindow('exo1.htm','PopupFile','314','338')
+//-->
+</SCRIPT>
+</BODY>
+</HTML>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lesson 7c: JavaScript Get Full Name</title>
+
+<Script Language="JavaScript">
+//Practical Learning: Using a Function's Local Variables
+function getFullName()
+{
+  var firstName, lastName, fullName;
+ 
+  firstName = document.CreditApplication.txtFirstName.value; 
+  lastName  = document.CreditApplication.txtLastName.value;
+  // textbox to insert firstname & 1astname
+
+  fullName  = firstName + " " + lastName; //1st name+space+last name
+ 
+  document.CreditApplication.txtFullName.value = fullName; 
+  //hasil nama yg dicantumkan hasil drp 1st+last name diassignkan ke textbox fullname
+}
+</script> 
+</head>
+
+<body>
+
+<h2 font face="Georgia, Garamond, Times New Roman" color="#FF0000"> Credit Application</h2>
+ 
+<font face="Verdana, Tahoma, Arial" size="3">
+    <form name="CreditApplication"> <!-- form name: CreditApplication -->
+    	<table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="100">First Name:</td>
+          <td><input type="text" name="txtFirstName" size="14" ></td>
+        </tr>
+        
+        <tr>
+          <td width="100">Last Name:</td>
+          <td><input type="text" name="txtLastName" size="14" ></td>
+        </tr>
+        
+        <tr>
+          <td width="100">Full Name:</td>
+          <td><input type="text" name="txtFullName" size="30" "></td>
+        </tr>
+        
+        <tr>
+          <td width="100"><br><br></td> 
+          <td>
+               <input type="button" value="Show Full Name" onclick="getFullName()"/>  
+               <input type="reset" value="Clear Name" />
+          </td>
+        </tr>
+        
+      	</table>
+    </form>
+</font> 
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript"> 
+
+function confirmation() { 
+var answer = confirm("Leave this page?") 
+             if (answer) { 
+             	alert("Bye bye!") 
+             	window.location = "http://www.google.com/"; } //page redirect
+                          else
+                          {  alert("Thanks for sticking around!") } 
+} 
+</script> 
+</head>
+
+
+<body>
+<form> <input type="button" onclick="confirmation()" value="Leave This Page"> </form> 
+</body>
+</html>
